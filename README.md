@@ -27,7 +27,7 @@ mandatory. It specifies the account name for which we search for tokens
 and balances.
 
 With `--rpc=URL` you can choose an EOS node where you send your quieries
-to. The URL is listed in `ssl_endpoint` entry of the BP's `/bp.json`
+to. The URL is listed in `api_endpoint` entry of the BP's `/bp.json`
 file.
 
 With `--json`, the tool prints a JSON object with all balances to its

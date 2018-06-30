@@ -23,7 +23,7 @@ use LWP::UserAgent;
 use HTTP::Request;
 
 my $account;
-my $rpcurl = 'https://api.cypherglass.com';
+my $rpcurl = 'http://eu1.eosdac.io';
 my $verbose;
 my $out_json;
 
