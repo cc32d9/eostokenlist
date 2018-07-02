@@ -4,6 +4,11 @@ This tool takes an account name as an argument and scans all its
 transactions for token transfers or issuance. It then prints the total
 balance for each token in text or JSON format.
 
+The tool requires an RPC URL of an EOS node that has the history plugin
+enabled and is using wildcard filter. Most of BP nodes do not support
+this feature. Here you can find instructions for building your own node
+for this purpose: https://bit.ly/2NldDaL
+
 ## Installing the software
 
 Packages required for Ubuntu or Debian:
