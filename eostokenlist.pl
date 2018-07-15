@@ -204,7 +204,10 @@ foreach my $action (@all_actions)
 {
     my $at = $action->{'action_trace'};
     my $act = $at->{'act'};
-    if( $act->{'name'} eq 'transfer' or $act->{'name'} eq 'issue' )
+    my $name = $act->{'name'};
+    if( ($name eq 'transfer' or $name eq 'issue') and
+        ref($act->{'data'}) eq 'HASH' and
+        defined($act->{'data'}{'quantity'}) )
     {
         my $issuer = $act->{'account'};
         my $qty = $act->{'data'}{'quantity'};
